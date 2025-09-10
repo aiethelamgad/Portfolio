@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: portfolio
+    env: docker
+    rootDir: .
+    plan: free
+    # If you need a custom build command (e.g., for dependencies before Docker build)
+    # buildCommand: ""
+    # If you need a custom start command (unlikely for php:8.1-apache)
+    # startCommand: ""
