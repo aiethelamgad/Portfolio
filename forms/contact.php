@@ -36,14 +36,21 @@ try {
     $mail->addAddress($receiving_email_address);                // Add a recipient
 
     // Content
-    $mail->isHTML(false);;                                        // Set email format to HTML
+    $mail->isHTML(true);                                        // Set email format to HTML
     $mail->Subject = $_POST['subject'];
 
-    $mail->Body = 'From: ' . $_POST['name'] . "\n" .
-                  'Email: ' . $_POST['email'] . "\n" .
-                  'Subject: ' . $_POST['subject'] . "\n\n" .
-                  'Message: ' . $_POST['message'];
+    // Read the HTML email template
+    $template_path = __DIR__ . '/email-template.html';
+    $email_body = file_get_contents($template_path);
 
+    // Replace placeholders with actual data
+    $email_body = str_replace('{name}', $_POST['name'], $email_body);
+    $email_body = str_replace('{email}', $_POST['email'], $email_body);
+    $email_body = str_replace('{subject}', $_POST['subject'], $email_body);
+    $email_body = str_replace('{message}', $_POST['message'], $email_body);
+
+    $mail->Body    = $email_body;
+    $mail->AltBody = 'From: ' . $_POST['name'] . '\nEmail: ' . $_POST['email'] . '\n\nMessage: ' . $_POST['message'];
 
     $mail->send();
     echo 'OK';
@@ -51,5 +58,4 @@ try {
     echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
 }
 ?>
-
 
