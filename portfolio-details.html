@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Portfolio Details - FolioOne Bootstrap Template</title>
+  <title>Project Details</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -15,7 +15,9 @@
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -39,8 +41,11 @@
 <body class="portfolio-details-page">
 
   <header id="header" class="header d-flex align-items-center light-background sticky-top">
-    <div class="container position-relative d-flex align-items-center justify-content-between">
-
+    <div class="container position-relative d-flex align-items-center justify-content-start">
+      <img src="assets/img/favicon.png" alt="Aiethel Amgad Logo" class="img-fluid me-3"
+        style="max-width: 70px; padding-left: 30px;">
+    </div>
+    <div class="container position-relative d-flex align-items-center justify-content-center">
       <!-- <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
       <img src="assets/img/logo.webp" alt="">
       <h1 class="sitename">FolioOne</h1> 
@@ -50,38 +55,19 @@
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
-          <li><a href="resume.html">Resume</a></li>
+          <li><a href="skills.html">Skills</a></li>
           <li><a href="services.html">Services</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="#">Dropdown 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="#">Deep Dropdown 1</a></li>
-                  <li><a href="#">Deep Dropdown 2</a></li>
-                  <li><a href="#">Deep Dropdown 3</a></li>
-                  <li><a href="#">Deep Dropdown 4</a></li>
-                  <li><a href="#">Deep Dropdown 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Dropdown 2</a></li>
-              <li><a href="#">Dropdown 3</a></li>
-              <li><a href="#">Dropdown 4</a></li>
-            </ul>
-          </li>
+          <li><a href="projects.html" class="active">Projects</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
-
-      <div class="header-social-links">
-        <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
-        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
-      </div>
-
+    </div>
+    <div class="container position-relative d-flex align-items-center justify-content-end">
+      <!-- Toggle Button -->
+      <button class="btn btn-outline-primary d-flex align-items-center gap-2" id="themeToggle">
+        <i class="bi bi-moon-fill" id="themeIcon"></i>
+      </button>
     </div>
   </header>
 
@@ -92,8 +78,8 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Portfolio Details</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam rem aperiam</p>
+        <h2>Project Details</h2>
+        <p>From registration to verification, this project shows how clean design meets strong security in one integrated system.</p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -129,21 +115,21 @@
                   </script>
                   <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                      <img src="assets/img/portfolio/portfolio-5.webp" alt="Portfolio Image" class="img-fluid">
+                      <img src="assets/img/portfolio/signup-form1.png" alt="Portfolio Image" class="img-fluid">
                     </div>
-                    <div class="swiper-slide">
+                    <!-- <div class="swiper-slide">
                       <img src="assets/img/portfolio/portfolio-7.webp" alt="Portfolio Image" class="img-fluid">
                     </div>
                     <div class="swiper-slide">
                       <img src="assets/img/portfolio/portfolio-8.webp" alt="Portfolio Image" class="img-fluid">
-                    </div>
+                    </div> -->
                   </div>
                   <div class="swiper-button-prev"></div>
                   <div class="swiper-button-next"></div>
                 </div>
               </div>
 
-              <div class="thumbnail-grid" data-aos="fade-up" data-aos-delay="200">
+              <!-- <div class="thumbnail-grid" data-aos="fade-up" data-aos-delay="200">
                 <div class="row g-2 mt-3">
                   <div class="col-3">
                     <img src="assets/img/portfolio/portfolio-4.webp" alt="Gallery Image" class="img-fluid glightbox">
@@ -158,14 +144,17 @@
                     <img src="assets/img/portfolio/portfolio-12.webp" alt="Gallery Image" class="img-fluid glightbox">
                   </div>
                 </div>
-              </div>
+              </div> -->
 
               <div class="tech-stack-badges" data-aos="fade-up" data-aos-delay="300">
-                <span>Angular</span>
+                <span>Full-Stack</span>
+                <span>Node.js</span>
                 <span>Express.js</span>
-                <span>PostgreSQL</span>
-                <span>GraphQL</span>
-                <span>Firebase</span>
+                <span>MongoDB</span>
+                <span>Authentication</span>
+                <span>Email Verification</span>
+                <span>SMS Verification</span>
+                <span>REST API</span> 
               </div>
             </div>
           </div>
@@ -174,68 +163,98 @@
             <div class="portfolio-details-content">
               <div class="project-meta">
                 <div class="badge-wrapper">
-                  <span class="project-badge">UX/UI Design</span>
+                  <span class="project-badge">Full-Stack Development</span>
                 </div>
                 <div class="date-client">
                   <div class="meta-item">
                     <i class="bi bi-calendar-check"></i>
-                    <span>September 2024</span>
+                    <span>July 2025</span>
                   </div>
-                  <div class="meta-item">
+                  <!-- <div class="meta-item">
                     <i class="bi bi-buildings"></i>
                     <span>DigitalCraft Solutions</span>
-                  </div>
+                  </div> -->
                 </div>
               </div>
 
-              <h2 class="project-title">Innovative Financial Dashboard App</h2>
+              <h2 class="project-title">AuthFlow – User Registration System</h2>
 
               <div class="project-website">
                 <i class="bi bi-link-45deg"></i>
-                <a href="#" target="_blank">projectwebsite.example.com</a>
+                <a href="https://github.com/aiethelamgad/AuthFlow---User-Registration-System" target="_blank">Project Website</a>
               </div>
 
               <div class="project-overview">
                 <p class="lead">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas varius tortor nibh, sit amet tempor nibh finibus et. Aenean eu enim justo. Vestibulum aliquam hendrerit molestie.
+                  This project showcases a secure and user-friendly authentication system designed with both frontend
+                  and backend excellence in mind. The goal was to build a smooth registration flow with modern UX
+                  features while ensuring data security through robust backend practices. From a responsive multi-step
+                  form to email/SMS verification and strong password protection, the project demonstrates my ability to
+                  combine clean design, usability, and scalable architecture into one complete solution.
                 </p>
 
                 <div class="accordion project-accordion" id="portfolio-details-projectAccordion">
                   <div class="accordion-item" data-aos="fade-up">
                     <h2 class="accordion-header">
-                      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#portfolio-details-collapse-1" aria-expanded="true" aria-controls="collapseOne">
+                      <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#portfolio-details-collapse-1" aria-expanded="true" aria-controls="collapseOne">
                         <i class="bi bi-clipboard-data me-2"></i> Project Overview
                       </button>
                     </h2>
-                    <div id="portfolio-details-collapse-1" class="accordion-collapse collapse show" data-bs-parent="#portfolio-details-projectAccordion">
+                    <div id="portfolio-details-collapse-1" class="accordion-collapse collapse show"
+                      data-bs-parent="#portfolio-details-projectAccordion">
                       <div class="accordion-body">
-                        <p>Cras ultricies ligula sed magna dictum porta. Nulla quis lorem ut libero malesuada feugiat. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Pellentesque in ipsum id orci porta dapibus. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.</p>
+                        <p class="lead">This is a complete Node.js-based email and SMS verification system with a
+                          beautiful multi-step registration form. The system includes:</p>
+                        <ul class="lead">
+                          <li><strong>Frontend:</strong> Beautiful responsive registration form with real-time
+                            validation</li>
+                          <li><strong>Backend:</strong> Node.js/Express API with MongoDB integration</li>
+                          <li><strong>Verification:</strong> Email and SMS verification with OTP codes</li>
+                          <li><strong>Security:</strong> Rate limiting, input validation, and secure password handling
+                          </li>
+                        </ul>
                       </div>
                     </div>
                   </div>
 
                   <div class="accordion-item" data-aos="fade-up" data-aos-delay="100">
                     <h2 class="accordion-header">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#portfolio-details-collapse-2" aria-expanded="false" aria-controls="collapseTwo">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#portfolio-details-collapse-2" aria-expanded="false"
+                        aria-controls="collapseTwo">
                         <i class="bi bi-exclamation-diamond me-2"></i> The Challenge
                       </button>
                     </h2>
-                    <div id="portfolio-details-collapse-2" class="accordion-collapse collapse" data-bs-parent="#portfolio-details-projectAccordion">
+                    <div id="portfolio-details-collapse-2" class="accordion-collapse collapse"
+                      data-bs-parent="#portfolio-details-projectAccordion">
                       <div class="accordion-body">
-                        <p>Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vivamus suscipit tortor eget felis porttitor volutpat. Curabitur aliquet quam id dui posuere blandit. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Sed porttitor lectus nibh.</p>
+                        <p class="lead">User authentication systems often fail to balance <strong>security</strong> with <strong>user experience</strong>. A
+                          traditional single-step registration can feel complex, while weak validation or poor verification methods can
+                          compromise data integrity and account safety. The challenge was to design a <strong>multi-step, secure, and responsive
+                            registration system</strong> that verifies user identity through both <strong>email and SMS</strong>, while
+                          preventing abuse with strong security measures.</p>
                       </div>
                     </div>
                   </div>
 
                   <div class="accordion-item" data-aos="fade-up" data-aos-delay="200">
                     <h2 class="accordion-header">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#portfolio-details-collapse-3" aria-expanded="false" aria-controls="collapseThree">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#portfolio-details-collapse-3" aria-expanded="false"
+                        aria-controls="collapseThree">
                         <i class="bi bi-award me-2"></i> The Solution
                       </button>
                     </h2>
-                    <div id="portfolio-details-collapse-3" class="accordion-collapse collapse" data-bs-parent="#portfolio-details-projectAccordion">
+                    <div id="portfolio-details-collapse-3" class="accordion-collapse collapse"
+                      data-bs-parent="#portfolio-details-projectAccordion">
                       <div class="accordion-body">
-                        <p>Donec sollicitudin molestie malesuada. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula.</p>
+                        <p class="lead">I developed a <strong>Node.js and MongoDB-based verification system</strong> with a modern <strong>multi-step
+                            registration form</strong>. The frontend ensures smooth onboarding with <strong>real-time validation, password
+                            strength indicators, and responsive design</strong>, while the backend enforces security through <strong>OTP-based
+                            email/SMS verification, bcrypt password hashing, input validation, and rate limiting</strong>. This combination
+                          delivers a user-friendly experience without sacrificing reliability, making the system both <strong>scalable</strong>
+                          and <strong>secure</strong> for production environments.</p>
                       </div>
                     </div>
                   </div>
@@ -245,26 +264,35 @@
               <div class="project-features" data-aos="fade-up" data-aos-delay="300">
                 <h3><i class="bi bi-stars"></i> Key Features</h3>
                 <div class="row g-3">
-                  <div class="col-md-6">
+                  <div class="col-md-12">
+                    <h6><i class="bi bi-laptop-fill"></i>Frontend</h6>
                     <ul class="feature-list">
-                      <li><i class="bi bi-check2-circle"></i> Real-time Data Visualization</li>
-                      <li><i class="bi bi-check2-circle"></i> User Role Management</li>
-                      <li><i class="bi bi-check2-circle"></i> Secure Authentication</li>
+                      <li><i class="bi bi-check2-circle"></i><strong>Multi-step Registration Form –&nbsp;</strong>a smooth and user-friendly 3-step onboarding flow</li>
+                      <li><i class="bi bi-check2-circle"></i><strong>Real-time Validation –&nbsp;</strong>instant error feedback for a seamless experience</li>
+                      <li><i class="bi bi-check2-circle"></i><strong>Password Strength Indicator –&nbsp;</strong>visual guidance to encourage strong security practices</li>
+                      <li><i class="bi bi-check2-circle"></i><strong>Country Code Selector –&nbsp;</strong>international phone number support for global users</li>
+                      <li><i class="bi bi-check2-circle"></i><strong>Responsive Design –&nbsp;</strong>fully optimized for both desktop and mobile devices</li>
+                      <li><i class="bi bi-check2-circle"></i><strong>Social Login Buttons –&nbsp;</strong>prepared for easy OAuth integration (Google, Facebook, etc.)</li>                      
                     </ul>
                   </div>
-                  <div class="col-md-6">
+                  <div class="col-md-12">
+                    <h6><i class="bi bi-server"></i>Backend</h6>
                     <ul class="feature-list">
-                      <li><i class="bi bi-check2-circle"></i> Customizable Dashboards</li>
-                      <li><i class="bi bi-check2-circle"></i> Data Export Options</li>
-                      <li><i class="bi bi-check2-circle"></i> Multi-device Support</li>
+                      <li><i class="bi bi-check2-circle"></i><strong>User Registration –&nbsp;</strong>secure and scalable account creation system</li>
+                      <li><i class="bi bi-check2-circle"></i><strong>Email Verification –&nbsp;</strong>OTP-based email confirmation for trust and security</li>
+                      <li><i class="bi bi-check2-circle"></i><strong>SMS Verification –&nbsp;</strong>OTP via SMS for an additional authentication layer</li>
+                      <li><i class="bi bi-check2-circle"></i><strong>Rate Limiting –&nbsp;</strong>protection against spam and brute force attacks</li>
+                      <li><i class="bi bi-check2-circle"></i><strong>Input Validation –&nbsp;</strong>comprehensive checks to ensure clean and safe data</li>
+                      <li><i class="bi bi-check2-circle"></i><strong>Password Security –&nbsp;</strong>implemented with bcrypt hashing and salting</li>
+                      <li><i class="bi bi-check2-circle"></i><strong>Database Integration –&nbsp;</strong>MongoDB with Mongoose ODM for robust data handling</li>
                     </ul>
                   </div>
                 </div>
               </div>
 
-              <div class="cta-buttons" data-aos="fade-up" data-aos-delay="400">
-                <a href="#" class="btn-view-project">View Live Project</a>
-                <a href="#" class="btn-next-project">Next Project <i class="bi bi-arrow-right"></i></a>
+              <div class="cta-buttons" data-aos="fade-up" data-aos-delay="200">
+                <!-- <a href="#" class="btn-view-project">View Live Project</a> -->
+                <a href="https://github.com/aiethelamgad/DEPI/tree/main/Finder%20Website" class="btn-next-project">Next Project <i class="bi bi-arrow-right"></i></a>
               </div>
             </div>
           </div>
@@ -280,27 +308,30 @@
 
     <div class="container">
       <div class="copyright text-center ">
-        <p>© <span>Copyright</span> <strong class="px-1 sitename">FolioOne</strong> <span>All Rights Reserved<br></span></p>
+        <p>Copyright © <span>2025, </span><span>All Rights Reserved<br></span>
+        </p>
       </div>
       <div class="social-links d-flex justify-content-center">
-        <a href=""><i class="bi bi-twitter-x"></i></a>
-        <a href=""><i class="bi bi-facebook"></i></a>
-        <a href=""><i class="bi bi-instagram"></i></a>
-        <a href=""><i class="bi bi-linkedin"></i></a>
+        <a href="mailto:aiethel.amjad@gmail.com"><i class="bi bi-envelope"></i></a>
+        <a href="tel:+201116996307"><i class="bi bi-telephone"></i></a>
+        <a href="https://wa.me/201116996307" target="_blank"><i class="bi bi-whatsapp"></i></a>
+        <a href="https://www.linkedin.com/in/aiethelamgad" target="_blank"><i class="bi bi-linkedin"></i></a>
+        <a href="https://github.com/aiethelamgad" target="_blank"><i class="bi bi-github"></i></a>
       </div>
       <div class="credits">
         <!-- All the links in the footer should remain intact. -->
         <!-- You can delete the links only if you've purchased the pro version. -->
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
         <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        Designed by <span>Bootstrap5</span>
       </div>
     </div>
 
   </footer>
 
   <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
 
   <!-- Preloader -->
   <div id="preloader"></div>
